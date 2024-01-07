@@ -60,4 +60,6 @@ use("EdenEast/nightfox.nvim") -- colorscheme nightfox
 use("olimorris/onedarkpro.nvim") -- colorscheme onedark
 use('nyngwang/nvimgelion') -- colorscheme nvimgelion
 
+use('nvim-tree/nvim-tree.lua')
+
 end)

@@ -42,4 +42,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<A-w>", "<C-w>")
-vim.keymap.set("n", "<A-w>v", "<C-w>L")
+vim.keymap.set("n", "<C-t>", ":new<CR>:terminal ")
+
+-- vim.keymap.set("n", "<leader>fb", ":NvimTreeToggle<CR>")
+-- vim.keymap.set("n", "<leader>fo", ":NvimTreeFocus<CR>")
