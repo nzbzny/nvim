@@ -44,5 +44,12 @@ end)
 vim.keymap.set("n", "<A-w>", "<C-w>")
 vim.keymap.set("n", "<C-t>", ":new<CR>:terminal ")
 
--- vim.keymap.set("n", "<leader>fb", ":NvimTreeToggle<CR>")
--- vim.keymap.set("n", "<leader>fo", ":NvimTreeFocus<CR>")
+-- auto close parenthesis - flashes an error in rust files due to lsp picking 
+-- things up on ESC, so debating whether i like this or not
+vim.keymap.set("i", "{<CR>", "{<CR>}<C-o>O")
+
+-- add back in if deciding to use nvimtree
+--[[
+vim.keymap.set("n", "<leader>fb", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>fo", ":NvimTreeFocus<CR>")
+--]]
