@@ -24,6 +24,10 @@ use('theprimeagen/harpoon')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
 
+use('windwp/nvim-ts-autotag')
+use('windwp/nvim-autopairs')
+
+use('MaxMEllon/vim-jsx-pretty')
 
 use('neovim/nvim-lspconfig')
 use('williamboman/mason.nvim')
@@ -37,6 +41,12 @@ use('hrsh7th/cmp-nvim-lua')
 use('L3MON4D3/LuaSnip')
 use('rafamadriz/friendly-snippets')
 
+use('tpope/vim-dadbod')
+use('kristijanhusak/vim-dadbod-completion')
+use('kristijanhusak/vim-dadbod-ui')
+use('tpope/vim-surround')
+use('tpope/vim-repeat')
+use('tpope/vim-commentary')
 
 use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -61,5 +71,7 @@ use("olimorris/onedarkpro.nvim") -- colorscheme onedark
 use('nyngwang/nvimgelion') -- colorscheme nvimgelion
 
 use('nvim-tree/nvim-tree.lua')
+
+use('folke/trouble.nvim')
 
 end)

@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
 	  -- A list of parser names, or "all" (the five listed parsers should always be installed)
-	  ensure_installed = { "c", "cpp", "lua", "python", "query", "rust", "vim", "vimdoc" },
+	  ensure_installed = { "c", "cpp", "css", "javascript", "lua", "python", "query", "rust", "typescript", "vim", "vimdoc" },
 	  --
 	  -- Install parsers synchronously (only applied to `ensure_installed`)
 	  sync_install = false,
@@ -35,4 +35,22 @@ require'nvim-treesitter.configs'.setup {
 	  	-- Instead of true it can also be a list of languages
 	  	additional_vim_regex_highlighting = false,
 	  },
+      indent = { enable = false }
 }
+
+require('nvim-ts-autotag').setup({
+    opts = {
+        enable_close = true,
+        enable_rename = true,
+        enable_close_on_slash = false
+    }
+})
+
+require('nvim-autopairs').setup({
+    check_ts = true,
+    ts_config = {
+        lua = {'string'},
+        javascript = {'template_string'},
+        typescript = {'template_string'},
+    }
+})

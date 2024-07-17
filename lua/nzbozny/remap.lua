@@ -19,6 +19,7 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 -- next greatest remap ever : asbjornHaland
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("n", "<leader>p", [["+P]])
 
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
@@ -42,11 +43,13 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<A-w>", "<C-w>")
+vim.keymap.set("n", "<A-w>b", ":split<CR>")
 vim.keymap.set("n", "<C-t>", ":new<CR>:terminal ")
 
 -- auto close parenthesis - flashes an error in rust files due to lsp picking 
 -- things up on ESC, so debating whether i like this or not
-vim.keymap.set("i", "{<CR>", "{<CR>}<C-o>O")
+-- vim.keymap.set("i", "{<CR>", "{<CR>}<C-o>O")
+vim.keymap.set("n", "<leader>tr", function() require("trouble").toggle() end)
 
 -- add back in if deciding to use nvimtree
 --[[
