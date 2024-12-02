@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "modus_vivendi"
+	color = color or "carbonfox" -- "modus_vivendi"
 	pcall(vim.cmd, "colorscheme " .. color)
 end
 
